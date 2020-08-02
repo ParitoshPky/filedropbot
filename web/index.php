@@ -96,11 +96,12 @@ function get_link($bot, $chat_id, $message_id) {
     $api_url = "https://exe.io/api?api={$api_token}&url={$required_url}";
     
     $result = @file_get_contents($api_url);
+    $fresult=substr($result,65);
 
     $bot->api->editMessageText(array(
         "chat_id" => $chat_id,
         "message_id" => $status_message->message_id,
-        "text" => $result,
+        "text" => Open this link to get file $fresult,
         "disable_web_page_preview" => True
     ));
 }
