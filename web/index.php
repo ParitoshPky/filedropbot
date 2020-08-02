@@ -96,7 +96,8 @@ function get_link($bot, $chat_id, $message_id) {
     $api_url = "https://exe.io/api?api={$api_token}&url={$required_url}";
     
     $result = @file_get_contents($api_url);
-    $fresult=substr($result,65);
+    $fresult1=substr($result,65);
+    $fresult2=chop($fresult1,'"}');
 
     $bot->api->editMessageText(array(
         "chat_id" => $chat_id,
