@@ -101,7 +101,7 @@ function get_link($bot, $chat_id, $message_id) {
     $bot->api->editMessageText(array(
         "chat_id" => $chat_id,
         "message_id" => $status_message->message_id,
-        "text" => 'Open this link to get file =' $fresult,
+        "text" => $fresult,
         "disable_web_page_preview" => True
     ));
 }
