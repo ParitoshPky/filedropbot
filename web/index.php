@@ -92,11 +92,10 @@ function get_link($bot, $chat_id, $message_id) {
 
     $required_url = "https://telegram.dog/" . $GLOBALS["TG_BOT_USERNAME"] . "?start=" . "view" . "_" . $req_message->message_id . "_" . "tg";
     
-$api_token = '5dd1a9f728581724d04b90fda350a5293384e51f';
-
-$api_url = "https://exe.io/api?api={$api_token}&url={$required_url}&alias=CustomAlias&format=text";
-
-$result = @file_get_contents($api_url);
+    $api_token = '5dd1a9f728581724d04b90fda350a5293384e51f';
+    $api_url = "https://exe.io/api?api={$api_token}&url={$required_url}";
+    
+    $result = @file_get_contents($api_url);
 
     $bot->api->editMessageText(array(
         "chat_id" => $chat_id,
