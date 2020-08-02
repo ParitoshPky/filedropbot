@@ -98,7 +98,7 @@ function get_link($bot, $chat_id, $message_id) {
     $result = @file_get_contents($api_url);
     $fresult1=substr($result,65);
     $fresult2=chop($fresult1,'"}');
-    $fresult3='Open this link to get your file http://exe.io/' ;
+    $fresult3='Here is your file http://exe.io/' ;
     $fresult=$fresult3.$fresult2 ;
 
     $bot->api->editMessageText(array(
