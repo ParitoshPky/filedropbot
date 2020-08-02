@@ -24,7 +24,7 @@ else {
 $GLOBALS["START_MESSAGE"] = <<<EOM
 Thank you for using FileDropBot
 
-<u><b>you can forward me any media message</b></u>, and <b><i>I might help you to create a PUBlic link</i></b>.
+<b>you can forward me any media message</b>, and <b><i>I might help you to create a PUBlic link</i></b>.
 
 Subscribe ℹ️ @CineBro9 if you ❤️ using this bot!
 EOM;
